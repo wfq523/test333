@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/shouye"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="首页"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/shoucang"
+        android:enabled="true"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="收藏"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sousuo"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="搜索"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/my"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="我"
+        app:showAsAction="always" />
+
+</menu>
