@@ -14,7 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginModel implements Loginiface {
     private Retrofit retrofit;
-
+    private UserService service;
     //构造函数
     public  LoginModel()
     {
@@ -23,6 +23,7 @@ public class LoginModel implements Loginiface {
                 .baseUrl(Common.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+        service = retrofit.create(UserService.class);//service 实例化
     }
 
     @Override
